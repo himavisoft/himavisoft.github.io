@@ -3,111 +3,195 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himavisoft - Technical Software Consultancy</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Himavisoft - AI-First Software Consultancy</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <header>
       <nav>
-        <div class="logo">Himavisoft</div>
+        <div class="logo">himavisoft</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#expertise">Expertise</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/team.html">Team</a></li>
+          <li><a href="#contact" class="cta-button">Get in Touch</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section id="home" class="hero">
+      <section id="hero" class="hero">
         <div class="hero-content">
-          <h1>Building Robust Technical Solutions</h1>
-          <p>
-            Specializing in deep backend systems and AI-driven fullstack
-            solutions
+          <h1>
+            Building the future with
+            <br />
+            <span class="gradient-text">AI-First Engineering</span>
+          </h1>
+          <p class="subtitle">
+            We transform ideas into intelligent software products. Specializing
+            in LLM-powered applications and sophisticated full-stack solutions.
           </p>
-          <a href="#contact" class="cta-button">Get in Touch</a>
+          <div class="hero-cta">
+            <a href="#contact" class="primary-button">Start Your Project</a>
+            <a href="#approach" class="secondary-button">Our Approach →</a>
+          </div>
+        </div>
+        <div class="tech-stack">
+          <div class="tech-item">OpenAI</div>
+          <div class="tech-item">Anthropic</div>
+          <div class="tech-item">LangChain</div>
+          <div class="tech-item">Vector DBs</div>
+          <div class="tech-item">React</div>
+          <div class="tech-item">Node.js</div>
         </div>
       </section>
 
       <section id="services" class="services">
-        <h2>Our Services</h2>
+        <h2>Our Expertise</h2>
         <div class="services-grid">
           <div class="service-card">
-            <i class="fas fa-server"></i>
-            <h3>Backend Systems</h3>
-            <p>Scalable, secure, and high-performance backend solutions</p>
+            <div class="service-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>LLM Integration</h3>
+            <p>
+              Custom LLM solutions using latest models from OpenAI, Anthropic,
+              and open-source alternatives. Specialized in RAG, fine-tuning, and
+              context engineering.
+            </p>
           </div>
           <div class="service-card">
-            <i class="fas fa-brain"></i>
-            <h3>AI Solutions</h3>
-            <p>Intelligent systems powered by cutting-edge AI technology</p>
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Full-Stack Development</h3>
+            <p>
+              End-to-end development of sophisticated web applications. Modern
+              tech stack with React, Node.js, and cloud-native architecture.
+            </p>
           </div>
           <div class="service-card">
-            <i class="fas fa-code"></i>
-            <h3>Fullstack Development</h3>
-            <p>End-to-end solutions with modern tech stack</p>
+            <div class="service-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>0 to 1 Product Development</h3>
+            <p>
+              Complete product development from ideation to launch. YC-startup
+              experience in building and scaling products.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="expertise" class="expertise">
-        <h2>Our Expertise</h2>
-        <div class="expertise-grid">
-          <div class="expertise-item">
-            <h3>Backend Technologies</h3>
-            <ul>
-              <li>Distributed Systems</li>
-              <li>Microservices Architecture</li>
-              <li>High-Performance Computing</li>
-              <li>Cloud Infrastructure</li>
-            </ul>
+      <section id="approach" class="approach">
+        <h2>Our Approach</h2>
+        <div class="approach-grid">
+          <div class="approach-item">
+            <span class="step">01</span>
+            <h3>Deep Technical Assessment</h3>
+            <p>
+              We start with a thorough analysis of your requirements, choosing
+              the right AI models and architecture for your specific use case.
+            </p>
           </div>
-          <div class="expertise-item">
-            <h3>AI & Machine Learning</h3>
-            <ul>
-              <li>Natural Language Processing</li>
-              <li>Computer Vision</li>
-              <li>Predictive Analytics</li>
-              <li>Deep Learning</li>
-            </ul>
+          <div class="approach-item">
+            <span class="step">02</span>
+            <h3>Rapid Prototyping</h3>
+            <p>
+              Quick iterations with working prototypes, allowing you to test and
+              validate ideas before full implementation.
+            </p>
           </div>
-          <div class="expertise-item">
-            <h3>Fullstack Development</h3>
-            <ul>
-              <li>Modern Web Applications</li>
-              <li>Real-time Systems</li>
-              <li>API Design & Development</li>
-              <li>Cloud-Native Solutions</li>
-            </ul>
+          <div class="approach-item">
+            <span class="step">03</span>
+            <h3>Production Excellence</h3>
+            <p>
+              Building with scalability and maintainability in mind, following
+              best practices in AI safety and software engineering.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="team">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-image">
+              <img src="images/placeholder.jpg" alt="Abhishek Vaid" />
+            </div>
+            <h3>Abhishek Vaid</h3>
+            <p>AI Engineering & Architecture</p>
+            <div class="member-links">
+              <a href="https://github.com/abhishekvaid" target="_blank">
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abhishek-vaid"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+              <a href="https://abhishekvaid.com" target="_blank">Website</a>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="member-image">
+              <img src="images/placeholder.jpg" alt="Himani Joshi" />
+            </div>
+            <h3>Himani Joshi</h3>
+            <p>Full-Stack Development & DevOps</p>
+            <div class="member-links">
+              <a href="https://github.com/himanijoshi" target="_blank">
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/himani-joshi"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+              <a href="https://himanijoshi.com" target="_blank">Website</a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
         <div class="contact-content">
-          <form id="contact-form">
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit" class="cta-button">Send Message</button>
-          </form>
-          <div class="contact-info">
-            <div class="info-item">
-              <i class="fas fa-envelope"></i>
-              <p>contact@himavisoft.com</p>
-            </div>
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>Your Location</p>
-            </div>
+          <div class="contact-text">
+            <h2>Start Your Project</h2>
+            <p>
+              Let's discuss how we can help you build your next intelligent
+              software product.
+            </p>
           </div>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required />
+              <label for="name">Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" required></textarea>
+              <label for="message">Tell us about your project</label>
+            </div>
+            <button type="submit" class="submit-button">Send Message →</button>
+          </form>
         </div>
       </section>
     </main>
@@ -115,17 +199,29 @@
     <footer>
       <div class="footer-content">
         <div class="footer-section">
-          <h3>Himavisoft</h3>
-          <p>Building the future of technology</p>
+          <div class="logo">himavisoft</div>
+          <p>
+            Building intelligent software solutions for forward-thinking
+            businesses.
+          </p>
         </div>
         <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <h3>Contact</h3>
+          <p>hello@himavisoft.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="https://github.com/himavisoft" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/company/himavisoft" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/himavisoft" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div class="footer-bottom">
@@ -133,6 +229,6 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
