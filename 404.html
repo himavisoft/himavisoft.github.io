@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found - Himavisoft</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .error-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+      }
+      .error-code {
+        font-size: 6rem;
+        font-weight: bold;
+        color: #2563eb;
+        margin: 0;
+      }
+      .error-message {
+        font-size: 1.5rem;
+        color: #1e293b;
+        margin: 1rem 0;
+      }
+      .error-description {
+        color: #64748b;
+        margin-bottom: 2rem;
+      }
+      .back-home {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        transition: background-color 0.3s;
+      }
+      .back-home:hover {
+        background: #1d4ed8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <h1 class="error-code">404</h1>
+      <h2 class="error-message">Page Not Found</h2>
+      <p class="error-description">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <a href="/" class="back-home">Back to Home</a>
+    </div>
+  </body>
+</html>

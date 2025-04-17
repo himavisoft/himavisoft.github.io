@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Sitemap: https://himavisoft.com/sitemap.xml
+
+# Disallow admin and system files
+Disallow: /cgi-bin/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /node_modules/ 
