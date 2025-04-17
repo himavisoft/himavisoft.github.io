@@ -9,9 +9,9 @@
     --background-alt: #F9FAFB;
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 8rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
     --border-radius: 8px;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -41,7 +41,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
+    padding: 0.75rem var(--spacing-md);
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
     z-index: 1000;
@@ -94,23 +94,24 @@ nav {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     padding: var(--spacing-xl) var(--spacing-md);
     background: linear-gradient(135deg, var(--background-alt) 0%, var(--background) 100%);
+    padding-top: 5rem;
 }
 
 .hero-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    margin-bottom: var(--spacing-md);
-    line-height: 1.2;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.1;
 }
 
 .gradient-text {
@@ -121,17 +122,18 @@ h1 {
 }
 
 .subtitle {
-    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
     max-width: 800px;
-    margin: 0 auto var(--spacing-lg);
+    margin: 0 auto var(--spacing-md);
     color: var(--text-light);
+    line-height: 1.4;
 }
 
 .hero-cta {
     display: flex;
     gap: var(--spacing-sm);
     justify-content: center;
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 .primary-button, .secondary-button {
@@ -169,7 +171,9 @@ h1 {
     }
     
     .hero {
+        min-height: 70vh;
         padding: var(--spacing-lg) var(--spacing-sm);
+        padding-top: 4rem;
     }
     
     .hero-cta {
@@ -222,16 +226,22 @@ h1 {
 }
 
 .calendly-container {
-    margin: var(--spacing-lg) 0;
+    margin: var(--spacing-md) 0;
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
     background: white;
-    padding: 1px;
+    min-height: 630px;
+}
+
+.calendly-inline-widget {
+    width: 100%;
+    height: 100%;
+    min-height: 630px;
 }
 
 .contact-info {
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 .contact-info p {
@@ -282,10 +292,8 @@ h1 {
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
-    max-width: 500px;
-    margin: var(--spacing-md) auto;
-    position: relative;
-    overflow: hidden;
+    max-width: 800px;
+    margin: var(--spacing-lg) auto 0;
 }
 
 .consultation-offer::before {
@@ -301,35 +309,46 @@ h1 {
 .offer-badge {
     background: var(--primary);
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: var(--spacing-sm);
-    animation: pulse 2s infinite;
-}
-
-.consultation-offer p {
-    color: var(--text-light);
     font-size: 1.1rem;
-    margin: 0;
+    letter-spacing: 0.5px;
 }
 
-.consultation-offer p::before {
-    content: '✨';
+.features {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--text);
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.features i {
+    color: var(--primary);
+    font-size: 1.2rem;
     margin-right: 0.5rem;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
+.bullet-separator {
+    color: var(--primary);
+    opacity: 0.3;
+    margin: 0 0.25rem;
+}
+
+.consultation-offer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--primary));
 }
 
 @media (max-width: 768px) {
@@ -337,15 +356,127 @@ h1 {
         padding: var(--spacing-lg) var(--spacing-sm);
     }
     
-    .calendly-container {
-        margin: var(--spacing-md) 0;
-    }
-    
     .consultation-offer {
-        margin: var(--spacing-md) var(--spacing-sm);
+        margin: var(--spacing-md) var(--spacing-xs);
+        padding: var(--spacing-sm);
     }
     
-    .consultation-offer p {
+    .calendly-container {
+        margin: var(--spacing-sm) 0;
+        min-height: 580px;
+    }
+    
+    .contact-info {
+        margin-top: var(--spacing-sm);
+    }
+    
+    .features {
+        flex-direction: column;
+        gap: var(--spacing-xs);
         font-size: 1rem;
+    }
+    
+    .bullet-separator {
+        display: none;
+    }
+}
+
+/* Footer */
+.footer {
+    background: var(--background-alt);
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    margin-top: var(--spacing-xl);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+}
+
+.footer-left {
+    flex-shrink: 0;
+}
+
+.footer-left .logo {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-left p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: flex-end;
+    margin-bottom: var(--spacing-sm);
+}
+
+.social-links a {
+    color: var(--text-light);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.footer-email {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-email:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    max-width: 1000px;
+    margin: var(--spacing-md) auto 0;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: var(--spacing-md);
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 } 

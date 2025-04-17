@@ -24,9 +24,6 @@
       <nav>
         <div class="logo">himavisoft</div>
         <ul class="nav-links">
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#team">Team</a></li>
           <li><a href="#contact" class="cta-button">Get in Touch</a></li>
         </ul>
       </nav>
@@ -40,8 +37,8 @@
             <span class="gradient-text">AI-First Engineering</span>
           </h1>
           <p class="subtitle">
-            We transform ideas into intelligent software products. Specializing
-            in LLM-powered applications and sophisticated full-stack solutions.
+            Transforming visionary ideas into intelligent software solutions
+            with cutting-edge AI technology
           </p>
           <div class="hero-cta">
             <a href="#contact" class="primary-button">Start Your Project</a>
@@ -54,21 +51,30 @@
         <div class="contact-content">
           <div class="contact-text">
             <h2>
-              Let's Chat Over a
+              Book Your
               <span class="highlight">Free</span>
-              Strategy Session
+              AI Innovation Session
             </h2>
             <div class="consultation-offer">
-              <div class="offer-badge">60 Minutes</div>
-              <p>No strings attached • Expert insights • Actionable roadmap</p>
+              <div class="offer-badge">60-Min Power Session</div>
+              <div class="features">
+                <i class="fas fa-lightbulb text-primary"></i>
+                AI Strategy
+                <span class="bullet-separator">•</span>
+                <i class="fas fa-layer-group text-primary"></i>
+                Solution Architecture
+                <span class="bullet-separator">•</span>
+                <i class="fas fa-check-circle text-primary"></i>
+                Clear Action Plan
+              </div>
             </div>
           </div>
           <div class="calendly-container">
             <!-- Calendly inline widget -->
             <div
               class="calendly-inline-widget"
-              data-url="https://calendly.com/abhishek-vaid/30min"
-              style="min-width: 320px; height: 700px"
+              data-url="https://calendly.com/abhishek-vaid-himavisoft/30min"
+              style="min-width: 320px; height: 630px"
             ></div>
           </div>
           <div class="contact-info">
@@ -82,6 +88,43 @@
       </section>
     </main>
 
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="logo">himavisoft</div>
+          <p>AI-First Software Engineering</p>
+        </div>
+        <div class="footer-right">
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/vaidabhishek86/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <a href="mailto:abhishek.vaid@himavisoft.com" class="footer-email">
+            abhishek.vaid@himavisoft.com
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Himavisoft. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize Calendly
+      window.onload = function () {
+        Calendly.initInlineWidget({
+          url: "https://calendly.com/abhishek-vaid-himavisoft/30min",
+          parentElement: document.querySelector(".calendly-inline-widget"),
+          prefill: {},
+          utm: {},
+        });
+      };
+    </script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
