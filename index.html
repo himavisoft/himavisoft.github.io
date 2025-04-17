@@ -3,7 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himavisoft - AI-First Software Consultancy</title>
+
+    <!-- Primary Meta Tags -->
+    <title>
+      Himavisoft - AI Development & Consulting for Startups | Custom AI
+      Solutions
+    </title>
+    <meta
+      name="title"
+      content="Himavisoft - AI Development & Consulting for Startups | Custom AI Solutions"
+    />
+    <meta
+      name="description"
+      content="Transform your business with custom AI solutions. Expert AI development and consulting for startups and SMBs. Free consultation, proof of concept, and end-to-end AI implementation."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://himavisoft.com/" />
+    <meta
+      property="og:title"
+      content="Himavisoft - AI Development & Consulting for Startups | Custom AI Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Transform your business with custom AI solutions. Expert AI development and consulting for startups and SMBs. Free consultation, proof of concept, and end-to-end AI implementation."
+    />
+    <meta
+      property="og:image"
+      content="https://himavisoft.com/assets/images/og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://himavisoft.com/" />
+    <meta
+      property="twitter:title"
+      content="Himavisoft - AI Development & Consulting for Startups"
+    />
+    <meta
+      property="twitter:description"
+      content="Transform your business with custom AI solutions. Expert AI development and consulting for startups and SMBs. Free consultation and implementation."
+    />
+    <meta
+      property="twitter:image"
+      content="https://himavisoft.com/assets/images/twitter-card.jpg"
+    />
+
+    <!-- Additional SEO Meta Tags -->
+    <meta
+      name="keywords"
+      content="AI development, artificial intelligence consulting, custom AI solutions, startup AI, SMB AI solutions, AI implementation, machine learning consulting, AI proof of concept, AI development partnership"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="Himavisoft" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://himavisoft.com/" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Himavisoft",
+        "description": "AI development and consulting services for startups and SMBs",
+        "image": "https://himavisoft.com/assets/images/logo.png",
+        "url": "https://himavisoft.com",
+        "telephone": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "US"
+        },
+        "priceRange": "$$",
+        "sameAs": ["https://www.linkedin.com/in/vaidabhishek86/"],
+        "offers": {
+          "@type": "Offer",
+          "name": "Free AI Innovation Session",
+          "description": "60-minute consultation for AI strategy and solution architecture",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "serviceType": [
+          "AI Development",
+          "AI Consulting",
+          "Custom Software Development"
+        ]
+      }
+    </script>
+
+    <!-- Existing Stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/journey.css" />
     <link
@@ -14,24 +105,50 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <!-- Calendly widget script -->
     <script
       src="https://assets.calendly.com/assets/external/widget.js"
       async
     ></script>
+
+    <style>
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #2563eb;
+        color: white;
+        padding: 8px;
+        z-index: 100;
+        transition: top 0.3s;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">himavisoft</div>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header role="banner">
+      <nav role="navigation" aria-label="Main navigation">
+        <div class="logo" role="heading" aria-level="1">himavisoft</div>
         <ul class="nav-links">
-          <li><a href="#journey">What to Expect</a></li>
-          <li><a href="#contact" class="cta-button">Get in Touch</a></li>
+          <li>
+            <a href="#journey" aria-label="View our customer journey">
+              Customer Journey
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="cta-button" aria-label="Contact us">
+              Get in Touch
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="main" role="main">
       <section class="hero">
         <div class="hero-content">
           <h1>
@@ -44,7 +161,7 @@
           </p>
           <div class="hero-cta">
             <a href="#contact" class="primary-button">Start Your Project</a>
-            <a href="#approach" class="secondary-button">Our Approach →</a>
+            <a href="#journey" class="secondary-button">Our Approach →</a>
           </div>
         </div>
       </section>
@@ -158,10 +275,10 @@
                 <div class="timeline-icon">
                   <i class="fas fa-laptop-code"></i>
                 </div>
-                <h3>Demo Development</h3>
+                <h3>Proof of Concept Demo</h3>
                 <p>
-                  We build a focused demo that showcases the core functionality
-                  of your AI solution.
+                  We build a focused demo that validates core features and
+                  showcases your AI solution in action.
                 </p>
                 <div class="timeline-tags">
                   <span class="tag free">
@@ -180,21 +297,21 @@
               <div class="timeline-number">04</div>
               <div class="timeline-content">
                 <div class="timeline-icon">
-                  <i class="fas fa-flask"></i>
+                  <i class="fas fa-file-signature"></i>
                 </div>
-                <h3>Proof of Concept</h3>
+                <h3>Contract & Specifications</h3>
                 <p>
-                  A collaborative phase where we implement and validate core
-                  features in your environment.
+                  We formalize our partnership with detailed production
+                  specifications and a clear project scope.
                 </p>
                 <div class="timeline-tags">
-                  <span class="tag paid">
-                    <i class="fas fa-tag"></i>
-                    Paid Phase
+                  <span class="tag">
+                    <i class="fas fa-file-contract"></i>
+                    Contract Phase
                   </span>
                   <span class="tag">
                     <i class="fas fa-calendar"></i>
-                    4-6 Weeks
+                    1-2 Weeks
                   </span>
                 </div>
               </div>
@@ -206,19 +323,19 @@
                 <div class="timeline-icon">
                   <i class="fas fa-rocket"></i>
                 </div>
-                <h3>Full Development</h3>
+                <h3>AI Development Partnership</h3>
                 <p>
-                  Complete development and deployment of your enterprise AI
-                  solution.
+                  Long-term collaboration to build, scale, and evolve your
+                  custom AI solution with continuous improvements.
                 </p>
                 <div class="timeline-tags">
                   <span class="tag">
-                    <i class="fas fa-project-diagram"></i>
-                    Project-Based
+                    <i class="fas fa-handshake"></i>
+                    Strategic Partnership
                   </span>
                   <span class="tag">
                     <i class="fas fa-chart-line"></i>
-                    Milestone Pricing
+                    Growth-Based Pricing
                   </span>
                 </div>
               </div>
@@ -230,7 +347,7 @@
               <i class="fas fa-shield-alt"></i>
             </div>
             <div class="security-content">
-              <h3>Enterprise-Grade Security</h3>
+              <h3>Business-Grade Security</h3>
               <p>
                 Your intellectual property and data are protected by robust NDAs
                 and industry-standard security practices.
@@ -255,7 +372,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer role="contentinfo" class="footer">
       <div class="footer-content">
         <div class="footer-left">
           <div class="logo">himavisoft</div>

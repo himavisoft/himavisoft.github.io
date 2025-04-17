@@ -3,7 +3,7 @@
   padding: 80px 0;
   background: #f8fafc;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .journey-section::before {
@@ -62,6 +62,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 0;
+  margin-bottom: 160px; /* Large margin to ensure space for security banner */
 }
 
 .journey-timeline::before {
@@ -90,6 +91,7 @@
 
 .timeline-item:last-child {
   margin-bottom: 0;
+  padding-bottom: 40px;
 }
 
 /* Timeline Number */
@@ -203,15 +205,18 @@
 
 /* Security Banner */
 .security-banner {
-  margin-top: 60px;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
   background: #fff;
   border-radius: 12px;
   padding: 32px;
   display: flex;
   gap: 24px;
-  align-items: center;
+  align-items: flex-start;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 5;
 }
 
 .security-banner:hover {
@@ -258,6 +263,7 @@
 .timeline-item:nth-child(3) { transition-delay: 0.3s; }
 .timeline-item:nth-child(4) { transition-delay: 0.4s; }
 .timeline-item:nth-child(5) { transition-delay: 0.5s; }
+.timeline-item:nth-child(6) { transition-delay: 0.6s; }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -289,15 +295,25 @@
 
   .security-banner {
     flex-direction: column;
-    text-align: center;
     padding: 24px;
+    text-align: center;
+    margin: 0 20px;
   }
 
   .security-icon {
     margin: 0 auto 16px;
   }
 
+  .security-content {
+    width: 100%;
+  }
+
   .security-tags {
     justify-content: center;
+    margin-top: 16px;
+  }
+
+  .journey-timeline {
+    margin-bottom: 120px; /* Adjusted spacing for mobile */
   }
 }
